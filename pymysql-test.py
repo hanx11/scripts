@@ -30,9 +30,9 @@ try:
     # connection.commit()
     with connection.cursor() as cursor:
         # Read a single record
-        sql = "select version(), current_date; select now();"
+        sql = "select version(), current_date;"
         cursor.execute(sql)
-        result = cursor.fetchall()
+        result = cursor.fetchone()
         print(result)
         print(type(result))
 except Exception as e:
