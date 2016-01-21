@@ -34,7 +34,6 @@ try:
         cursor.execute(sql)
         result = cursor.fetchone()
         print(result)
-        print(type(result))
 except Exception as e:
     raise e
 finally:
